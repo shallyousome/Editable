@@ -1,0 +1,15 @@
+{
+  "name": "Editable",
+  "description": "Shows some of the features of the Context Menus API",
+  "version": "0.6",
+  "permissions": ["contextMenus","http://*/","https://*/"],
+  "background": {
+    "scripts": ["edit.js"]
+  },"content_scripts": [
+    {
+"matches":  ["*://*/*"],
+      "js": ["contentjs.js"]
+    }
+  ],
+  "manifest_version": 2
+}
